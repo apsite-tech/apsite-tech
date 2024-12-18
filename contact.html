@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Apsite Technologies</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/react@latest/umd/react.production.min.js"></script>
+    <script>
+        const x1z9Y2 = "TWFkZSBieSBpbnVsdXRlIHwgY29ubmVjdCBAaW51bHV0ZS5jb20gfCBpbnVsdXRlLmNvbQ==";
+        const q7F0k5 = "U3BlY2lhbCB0aGFua3MgdG8gTWFybG9uICYgb3RoZXIgY3JlYXRvcnMgZm9yIGltYWdlcywgZGVzaWducywgZXRj";
+        function m1N4p8() {
+            const d4K2V9 = atob(x1z9Y2);
+            const t8G1R3 = atob(q7F0k5);
+            console.log(d4K2V9); 
+            console.log(t8G1R3); 
+        }
+        m1N4p8();
+    </script>
+    <script src="https://unpkg.com/react-dom@latest/umd/react-dom.production.min.js"></script>
+
+    <style>
+        /* Add this style to decrease the size of the service image */
+        .service-image {
+            max-width: 200px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .service-description {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div id="alert-container"></div>
+
+<section class="contact section container" id="contact">                
+    <div class="contact__container grid">
+        <div class="contact__box">
+            <h2 class="section__title">
+                Reach out to us today <br> via any of the given <br> information
+            </h2>
+            <h3 id="service-title" class="service-title"></h3>
+            <img id="service-image" src="" alt="Service Image" class="service-image" style="display:none;"/> 
+            <p id="service-description" class="service-description" style="display:none;"></p>
+
+            <div class="contact__data">
+                <div class="contact__information">
+                    <h3 class="contact__subtitle">Call us for instant support</h3>
+                    <span class="contact__description">
+                        <i class="ri-phone-line contact__icon"></i>
+                        <a href="tel:+918010372075" class="contact__phone">+91 80103 72075</a>
+                    </span>
+                </div>
+
+                <div class="contact__information">
+                    <h3 class="contact__subtitle">Write us by mail</h3>
+                    <span class="contact__description">
+                        <i class="ri-mail-line contact__icon"></i>
+                        <a href="mailto:connect@apsite.tech" class="contact__email">connect@apsite.tech</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <form id="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLScwm6XxUztV1hpbsrrrCvVKYrvzM-HgaOnYA57rVS3j7-Rvrg/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+            <div class="contact__inputs">
+                <div class="contact__content">
+                    <input type="email" name="entry.1045781291" placeholder=" " class="contact__input" required>
+                    <label class="contact__label">Email</label>
+                </div>
+                <div class="contact__content">
+                    <input type="text" name="entry.1065046570" placeholder=" " class="contact__input" required>
+                    <label class="contact__label">Subject</label>
+                </div>
+                <div class="contact__content contact__area">
+                    <textarea name="entry.1166974658" placeholder=" " class="contact__input" required></textarea>
+                    <label class="contact__label">Message</label>
+                </div>
+            </div>
+            <button type="submit" class="button button--flex">
+                Send Message
+                <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+        </form>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { displaySuccessMessage(); }"></iframe>
+    </div>
+</section>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const service = urlParams.get('service');
+
+    const serviceImage = document.getElementById('service-image');
+    const serviceDescription = document.getElementById('service-description');
+
+    if (service) {
+        document.getElementById('service-title').textContent = `Contact Us for ${service.charAt(0).toUpperCase() + service.slice(1).replace('-', ' ')}`;
+        
+        switch (service) {
+            case 'ai-ml':
+                serviceImage.src = 'assets/img/prod1.png'; 
+                serviceDescription.textContent = "Explore our cutting-edge AI and Machine Learning services.";
+                break;
+            case 'cloud-computing':
+                serviceImage.src = 'assets/img/prod2.png'; 
+                serviceDescription.textContent = "Our cloud computing solutions ensure scalability and flexibility.";
+                break;
+            case 'seo':
+                serviceImage.src = 'assets/img/prod3.png'; 
+                serviceDescription.textContent = "Improve your online presence with our SEO strategies.";
+                break;
+            case 'digital-marketing':
+                serviceImage.src = 'assets/img/prod4.png'; 
+                serviceDescription.textContent = "We help you grow your business with expert digital marketing.";
+                break;
+            case 'iot':
+                serviceImage.src = 'assets/img/prod5.png'; 
+                serviceDescription.textContent = "Unlock the potential of IoT with our smart solutions.";
+                break;
+            case 'business-intelligence':
+                serviceImage.src = 'assets/img/prod6.png'; 
+                serviceDescription.textContent = "Leverage data to make better decisions with our BI services.";
+                break;
+            case 'software-testing':
+                serviceImage.src = 'assets/img/prod7.png'; 
+                serviceDescription.textContent = "Ensure your software runs smoothly with our testing services.";
+                break;
+            case 'software-development':
+                serviceImage.src = 'assets/img/prod8.png'; 
+                serviceDescription.textContent = "Get custom software development tailored to your needs.";
+                break;
+            case 'ui-ux':
+                serviceImage.src = 'assets/img/prod9.png'; 
+                serviceDescription.textContent = "Enhance user engagement with our top-notch UI/UX design services.";
+                break;
+            default:
+                serviceImage.src = 'assets/img/default.png'; 
+                serviceDescription.textContent = "Learn more about our services.";
+                break;
+        }
+
+        serviceImage.style.display = 'block';
+        serviceDescription.style.display = 'block';
+
+        const subjectInput = document.querySelector('input[name="entry.1065046570"]');
+        subjectInput.value = `Inquiry about ${service.charAt(0).toUpperCase() + service.slice(1).replace('-', ' ')}`;
+    }
+
+    let submitted = false;
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        submitted = true;
+
+        // Show loading alert
+        Swal.fire({
+            title: 'Submitting...',
+            text: 'Please wait while we submit your message.',
+            allowOutsideClick: false,
+            onBeforeOpen: () => {
+                Swal.showLoading()
+            }
+        });
+
+        // Submit the form
+        this.submit();
+    });
+
+    function displaySuccessMessage() {
+        Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: 'Thank you for reaching out to us. We will get back to you shortly.',
+            confirmButtonText: 'Close'
+        });
+    }
+</script>
+
+</body>
+</html>

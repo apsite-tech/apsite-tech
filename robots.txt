@@ -1,0 +1,6 @@
+# robots.txt for Apsite Technologies
+
+User-agent: *
+Allow: /
+
+Sitemap: https://apsite.tech/sitemap.xml

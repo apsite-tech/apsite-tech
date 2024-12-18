@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+  <!-- Homepage -->
+  <url>
+    <loc>https://apsite.tech/index.html</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>1.00</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://apsite.tech/contact.html</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Privacy Page -->
+  <url>
+    <loc>https://apsite.tech/privacy.html</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.64</priority>
+  </url>
+
+  <!-- CSS Files (optional for documentation purposes, not generally indexed) -->
+  <url>
+    <loc>https://apsite.tech/assets/css/styles.css</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- JavaScript Files (optional for documentation purposes, not generally indexed) -->
+  <url>
+    <loc>https://apsite.tech/assets/js/main.js</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/js/scrollreveal.min.js</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- SCSS Files (optional for documentation purposes, not generally indexed) -->
+  <url>
+    <loc>https://apsite.tech/assets/scss/styles.scss</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+
+  <!-- Images (optional for documentation purposes, not generally indexed) -->
+  <url>
+    <loc>https://apsite.tech/assets/img/apsite_logo.svg</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod1.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod2.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod3.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod4.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod6.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod5.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+    <url>
+    <loc>https://apsite.tech/assets/img/prod6.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod7.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod8.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://apsite.tech/assets/img/prod9.png</loc>
+    <lastmod>2024-09-23</lastmod>
+    <priority>0.30</priority>
+  </url>
+</urlset>
