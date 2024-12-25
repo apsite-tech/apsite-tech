@@ -12,7 +12,7 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
-        
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://unpkg.com/react@latest/umd/react.production.min.js"></script>
@@ -37,6 +37,70 @@
         <link rel="canonical" href="https://apsite.tech/">
 
 
+        <style>#popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #popup-content {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        #popup-content h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #1e1e2f;
+        }
+
+        #popup-content p {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #3a3a3a;
+            line-height: 1.5;
+        }
+
+        #close-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        #close-button:hover {
+            background-color: #0056b3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }</style>
+
+
         <title>Apsite Technologies</title>
     </head>
     <body>
@@ -56,7 +120,7 @@
                             <a href="#about" class="nav__link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#products" class="nav__link">services</a>
+                            <a href="#product" class="nav__link">services</a>
                         </li>
                         <li class="nav__item">
                             <a href="#faqs" class="nav__link">FAQs</a>
@@ -81,6 +145,28 @@
                 </div>
             </nav>
         </header>
+
+</head>
+<body>
+    <div id="popup">
+        <div id="popup-content">
+            <h2>Payment Pending</h2>
+            <p>Your payment of Rs. 300 is pending. Please clear the payment to get the site back. Thank you!</p>
+            <button id="close-button">Go to Payment</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const popup = document.getElementById('popup');
+            const closeButton = document.getElementById('close-button');
+
+            closeButton.addEventListener('click', function() {
+                // Redirect to payment page
+                window.location.href = 'https://upi.inulute.com'; // Replace with your payment page URL
+            });
+        });
+    </script>
 
         <main class="main">
             <!--==================== HOME ====================-->
@@ -196,7 +282,7 @@
 
 
             <!--==================== product ====================-->
-            <section class="product section container" id="products">
+            <section class="product section container" id="product">
                 <h2 class="section__title-center">
                     Explore Our <br> Services
                 </h2>
